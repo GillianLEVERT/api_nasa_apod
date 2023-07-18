@@ -14,17 +14,22 @@ git clone https://github.com/votre-utilisateur/votre-repo.git
 
 2/
 Accédez au répertoire du projet :
+
 cd nom-du-repertoire
 
 3/
 Installez les dépendances avec PNPM (assurez-vous de l'avoir installé au préalable) :
+
 pnpm install
 
 4/
 Créez un fichier .env à la racine du projet et ajoutez votre clé d'API de la NASA :
 VITE_TOKEN=votre-clé-api
+
 4.1/
+
 dans votre fichier vite.config.js 
+
 `import dotenv from 'dotenv';
 
 dotenv.config();
@@ -32,7 +37,9 @@ dotenv.config();
 
 5/ 
 Démarrez l'application en mode développement :
+
 pnpm dev
+
 Ouvrez votre navigateur et accédez à l'URL http://localhost:3000 pour voir l'application.
 
 Amusez-vous à explorer les différentes images astronomiques fournies par l'API APOD de la NASA !
