@@ -14,6 +14,7 @@ export const App = () => {
         const data = await response.json();
         setData(data);
         console.log(data);
+        console.log(response)
       } catch (error) {
         console.error("Erreur lors de la récupération des données:", error);
       }
@@ -27,7 +28,7 @@ export const App = () => {
       {data ? (
         <div className="flex flex-col">
           <h1 className="text-3xl flex justify-center p-4">
-            Une image par jour directement via le site de la Nasa
+            One day, one image from the Nasa API
           </h1>
           <div className="flex justify-center">
             <div className="flex flex-col ">
@@ -45,7 +46,7 @@ export const App = () => {
           <p className="pt-10">{data.explanation}</p>
         </div>
       ) : (
-        <p>Chargement...</p>
+        <p>API Down for now..</p>
       )}
     </section>
   );
