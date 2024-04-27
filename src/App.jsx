@@ -24,7 +24,7 @@ export const App = () => {
   }, []);
 
   return (
-    <section className="p-4 text-white">
+    <section className="p-6 text-white">
       {data ? (
         <div className="flex flex-col">
           <h1 className="text-3xl flex justify-center p-4">
